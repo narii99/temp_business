@@ -42,7 +42,7 @@ Nuxt 4 기반으로 구축된 프론트엔드 프로젝트입니다.
 ---
 
 ## 📦 Project Structure
-
+```
 templete
 │
 ├─ app.vue
@@ -124,3 +124,4 @@ templete
 │
 └─ public
 └─ favicon.ico
+```
