@@ -1,0 +1,46 @@
+---
+alwaysApply: true
+---
+
+프론트엔드 코드 작성 시 아래 규칙을 반드시 따른다.
+
+1. Layout
+
+- 최상위 레이아웃 컴포넌트는 반드시 `Layout`으로 끝난다.
+  예: MainLayout, AuthLayout
+
+2. Container
+
+- 여러 요소를 감싸는 구조 단위는 `Container`로 끝난다.
+  예: PageContainer, CardListContainer
+
+3. Wrap
+
+- 1~2개 요소만 감싸는 작은 래퍼는 `Wrap`으로 끝난다.
+  예: InputWrap, IconWrap
+
+4. 일반 재사용 컴포넌트
+
+- 목적형 이름 사용 권장. 필요 시 `Box` 사용 허용.
+
+5. ul / li 네이밍
+
+- ul 관련 컴포넌트/클래스: `...List`
+  예: CardList
+- li 관련 컴포넌트/클래스: `...Item`
+  예: CardListItem
+
+6. 명명 규칙
+
+- 기능/역할이 드러나는 이름 사용 (의미형 이름)
+- 스타일용 id 사용 금지
+- 클래스명은 kebab-case 사용
+  예: .main-container, .card-list, .card-list-item
+
+7. 색상 규칙
+
+- 색상은 디자인 토큰(팔레트 상수)로만 사용
+- hex 직접 사용 금지
+  예: $neutral-50, $neutral-900, $blue-gray-500
+
+항상 위 규칙을 기반으로 컴포넌트 생성 / 수정 / 리팩토링을 수행한다.

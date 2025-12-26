@@ -1,0 +1,66 @@
+@use "../tokens" as t;
+
+// semantic colors -> CSS variables
+@mixin theme-light {
+  --bg: #{t.$neutral-50};
+  --surface: #{t.$white};
+  --surface-2: #{t.$neutral-100};
+  --text: #{t.$neutral-900};
+  --muted: #{t.$blue-gray-700};
+  --border: #{t.$neutral-200};
+
+  --primary: #{t.$brand-600};
+  --primary-contrast: #{t.$white};
+  --accent: #{t.$accent-500};
+
+  --shadow: 0 18px 50px rgba(#{t.$black}, 0.12);
+}
+
+@mixin theme-dark {
+  --bg: #{t.$blue-gray-900};
+  --surface: color-mix(in oklab, #{t.$white} 6%, transparent);
+  --surface-2: color-mix(in oklab, #{t.$white} 9%, transparent);
+  --text: color-mix(in oklab, #{t.$white} 92%, transparent);
+  --muted: color-mix(in oklab, #{t.$white} 72%, transparent);
+  --border: color-mix(in oklab, #{t.$white} 14%, transparent);
+
+  --primary: #{t.$brand-300};
+  --primary-contrast: #{t.$blue-gray-900};
+  --accent: #{t.$accent-300};
+
+  --shadow: 0 24px 60px rgba(#{t.$black}, 0.35);
+}
+
+:root {
+  /* layout tokens */
+  --container: 1120px;
+  --radius: 16px;
+  --radius-sm: 12px;
+  --header-h: 64px;
+
+  /* palette tokens (no raw color keywords in component css) */
+  --palette-white: #{t.$white};
+  --palette-black: #{t.$black};
+}
+
+:root {
+  @include theme-light;
+}
+
+/* system dark */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    @include theme-dark;
+  }
+}
+
+/* explicit */
+:root[data-theme="light"] {
+  @include theme-light;
+}
+
+:root[data-theme="dark"] {
+  @include theme-dark;
+}
+
+

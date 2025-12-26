@@ -1,3 +1,7 @@
-body {
-    background: hotpink;
-}
+@import "./reset";
+@import "./themes/theme";
+@import "./components/header";
+@import "./components/buttons";
+@import "./components/cards";
+@import "./pages/home";
+

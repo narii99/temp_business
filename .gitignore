@@ -1,4 +1,6 @@
+# ===============================
 # Nuxt dev/build outputs
+# ===============================
 .output
 .data
 .nuxt
@@ -6,19 +8,47 @@
 .cache
 dist
 
+# ===============================
 # Node dependencies
+# ===============================
 node_modules
 
+# ===============================
 # Logs
+# ===============================
 logs
 *.log
+.eslintcache
 
-# Misc
+# ===============================
+# Deployment / Platform
+# ===============================
+.vercel
+.netlify
+
+# ===============================
+# Package Manager (pnpm)
+# ===============================
+.pnpm-store
+
+# ===============================
+# System / Editor
+# ===============================
 .DS_Store
-.fleet
-.idea
+Thumbs.db
 
+# JetBrains IDE
+.idea
+.fleet
+
+# VSCode / Cursor
+.vscode
+# .vscode/*
+# !.vscode/settings.json
+
+# ===============================
 # Local env files
+# ===============================
 .env
 .env.*
 !.env.example
