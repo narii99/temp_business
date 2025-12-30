@@ -1,7 +1,16 @@
+/**
+ * main.scss
+ * 메인 스타일 파일
+ */
+
 @import "./reset";
 @import "./themes/theme";
+@import "./base/typography";
 @import "./components/header";
 @import "./components/buttons";
 @import "./components/cards";
+@import "./components/portfolio";
+@import "./components/footer";
+@import "./components/footer-info";
 @import "./pages/home";
 

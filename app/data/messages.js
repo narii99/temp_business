@@ -51,6 +51,114 @@ export const messages = {
   },
   "about.action.project": { ko: "내 프로젝트", en: "My Project", ja: "プロジェクト", zh: "我的项目" },
   "about.action.cv": { ko: "회사소개서", en: "Download CV", ja: "CV ダウンロード", zh: "下载简历" },
+
+  // Process 섹션
+  "process.title": { ko: "프로세스", en: "Work Process", ja: "プロセス", zh: "流程" },
+  "process.description": { ko: "진행 방식", en: "How we work", ja: "進め方", zh: "工作方式" },
+  "process.step.1.title": { ko: "1. 상담", en: "1. Consultation", ja: "1. 相談", zh: "1. 咨询" },
+  "process.step.1.desc": {
+    ko: "목표/기간/범위를 정리하고 템플릿 커스텀 범위를 확정합니다.",
+    en: "We align on goals, timeline, and scope, then confirm the customization range.",
+    ja: "目的/期間/範囲を整理し、カスタム範囲を確定します。",
+    zh: "梳理目标/周期/范围，并确认定制范围。",
+  },
+  "process.step.2.title": { ko: "2. 설계", en: "2. Planning", ja: "2. 設計", zh: "2. 规划" },
+  "process.step.2.desc": {
+    ko: "섹션/카피/비주얼을 확정하고 토큰 기반 스타일을 적용합니다.",
+    en: "We finalize sections, copy, and visuals, then apply token-based styling.",
+    ja: "セクション/コピー/ビジュアルを確定し、トークンベースのスタイルを適用します。",
+    zh: "确定板块/文案/视觉，并应用基于令牌的样式。",
+  },
+  "process.step.3.title": { ko: "3. 구현", en: "3. Build", ja: "3. 実装", zh: "3. 开发" },
+  "process.step.3.desc": {
+    ko: "컴포넌트 조립으로 빠르게 제작하고 반응형을 마감합니다.",
+    en: "We build quickly with components and finish responsive behavior.",
+    ja: "コンポーネントを組み立てて素早く制作し、レスポンシブを仕上げます。",
+    zh: "通过组件组合快速制作，并完成响应式适配。",
+  },
+  "process.step.4.title": { ko: "4. 배포", en: "4. Launch", ja: "4. 公開", zh: "4. 发布" },
+  "process.step.4.desc": {
+    ko: "SEO/성능을 점검하고 배포 및 운영 가이드를 제공합니다.",
+    en: "We check SEO/performance and provide deployment & 운영 guidance.",
+    ja: "SEO/性能を確認し、公開と運用ガイドを提供します。",
+    zh: "检查 SEO/性能，并提供上线与运营指南。",
+  },
+
+  // Contact 섹션 / 페이지 메타
+  "contact.title": { ko: "문의하기", en: "Contact", ja: "お問い合わせ", zh: "联系" },
+  "contact.description": {
+    ko: "원하시는 섹션/문구/컬러 토큰만 주시면 빠르게 커스텀해드려요.",
+    en: "Share the sections/copy/color tokens you want — we’ll customize it quickly.",
+    ja: "ご希望のセクション/文言/カラートークンを教えていただければ、素早くカスタムします。",
+    zh: "只要告诉我们需要的板块/文案/色彩令牌，我们就能快速定制。",
+  },
+  "contact.action.email": { ko: "메일 보내기", en: "Send email", ja: "メールを送る", zh: "发送邮件" },
+  "page.home.title": { ko: "홈", en: "Home", ja: "ホーム", zh: "主页" },
+  "page.home.description": {
+    ko: "토큰/테마 기반으로 빠르게 커스텀 가능한 Nuxt 홈 템플릿",
+    en: "A Nuxt home template designed for fast customization with tokens/themes",
+    ja: "トークン/テーマ基盤で素早くカスタムできる Nuxt ホームテンプレート",
+    zh: "基于令牌/主题，可快速定制的 Nuxt 首页模板",
+  },
+
+  // Portfolio 섹션
+  "portfolio.title": { ko: "포트폴리오", en: "Portfolio", ja: "ポートフォリオ", zh: "作品集" },
+  "portfolio.description": {
+    ko: "이미지/타이틀/설명 카드로 주요 작업을 정리했습니다.",
+    en: "A curated list of work showcased with image, title, and description cards.",
+    ja: "画像/タイトル/説明カードで主要な実績をまとめました。",
+    zh: "用图片/标题/说明卡片整理展示主要作品。",
+  },
+  "portfolio.more": { ko: "더보기", en: "Show more", ja: "もっと見る", zh: "查看更多" },
+  "portfolio.less": { ko: "접기", en: "Show less", ja: "折りたたむ", zh: "收起" },
+
+  "portfolio.item.p1.alt": { ko: "포트폴리오 이미지 1", en: "Portfolio image 1", ja: "ポートフォリオ画像 1", zh: "作品图片 1" },
+  "portfolio.item.p1.title": { ko: "랜딩 페이지", en: "Landing page", ja: "ランディングページ", zh: "落地页" },
+  "portfolio.item.p1.desc": { ko: "전환 중심의 섹션 구성", en: "Conversion-focused sections", ja: "コンバージョン重視の構成", zh: "以转化为目标的结构" },
+
+  "portfolio.item.p2.alt": { ko: "포트폴리오 이미지 2", en: "Portfolio image 2", ja: "ポートフォリオ画像 2", zh: "作品图片 2" },
+  "portfolio.item.p2.title": { ko: "기업 소개", en: "Company profile", ja: "会社紹介", zh: "公司介绍" },
+  "portfolio.item.p2.desc": { ko: "브랜드 톤 앤 매너 정리", en: "Consistent brand tone", ja: "ブランドトーン統一", zh: "统一品牌调性" },
+
+  "portfolio.item.p3.alt": { ko: "포트폴리오 이미지 3", en: "Portfolio image 3", ja: "ポートフォリオ画像 3", zh: "作品图片 3" },
+  "portfolio.item.p3.title": { ko: "서비스 소개", en: "Service overview", ja: "サービス紹介", zh: "服务介绍" },
+  "portfolio.item.p3.desc": { ko: "핵심 기능을 한눈에", en: "Key features at a glance", ja: "機能を一目で", zh: "核心功能一目了然" },
+
+  "portfolio.item.p4.alt": { ko: "포트폴리오 이미지 4", en: "Portfolio image 4", ja: "ポートフォリオ画像 4", zh: "作品图片 4" },
+  "portfolio.item.p4.title": { ko: "상품/가격", en: "Pricing", ja: "価格", zh: "价格" },
+  "portfolio.item.p4.desc": { ko: "플랜 비교 카드", en: "Plan comparison cards", ja: "プラン比較カード", zh: "方案对比卡片" },
+
+  "portfolio.item.p5.alt": { ko: "포트폴리오 이미지 5", en: "Portfolio image 5", ja: "ポートフォリオ画像 5", zh: "作品图片 5" },
+  "portfolio.item.p5.title": { ko: "문의/리드", en: "Lead capture", ja: "リード獲得", zh: "线索收集" },
+  "portfolio.item.p5.desc": { ko: "CTA 최적화", en: "Optimized CTA", ja: "CTA最適化", zh: "优化 CTA" },
+
+  "portfolio.item.p6.alt": { ko: "포트폴리오 이미지 6", en: "Portfolio image 6", ja: "ポートフォリオ画像 6", zh: "作品图片 6" },
+  "portfolio.item.p6.title": { ko: "블로그 카드", en: "Blog cards", ja: "ブログカード", zh: "博客卡片" },
+  "portfolio.item.p6.desc": { ko: "콘텐츠 리스트 UI", en: "Content list UI", ja: "コンテンツ一覧UI", zh: "内容列表 UI" },
+
+  "portfolio.item.p7.alt": { ko: "포트폴리오 이미지 7", en: "Portfolio image 7", ja: "ポートフォリオ画像 7", zh: "作品图片 7" },
+  "portfolio.item.p7.title": { ko: "케이스 스터디", en: "Case study", ja: "事例", zh: "案例" },
+  "portfolio.item.p7.desc": { ko: "문제-해결-성과", en: "Problem → Solution → Result", ja: "課題→解決→成果", zh: "问题→解决→成果" },
+
+  "portfolio.item.p8.alt": { ko: "포트폴리오 이미지 8", en: "Portfolio image 8", ja: "ポートフォリオ画像 8", zh: "作品图片 8" },
+  "portfolio.item.p8.title": { ko: "디자인 시스템", en: "Design system", ja: "デザインシステム", zh: "设计系统" },
+  "portfolio.item.p8.desc": { ko: "토큰 기반 컴포넌트", en: "Token-based components", ja: "トークンベース", zh: "基于令牌的组件" },
+
+  "portfolio.item.p9.alt": { ko: "포트폴리오 이미지 9", en: "Portfolio image 9", ja: "ポートフォリオ画像 9", zh: "作品图片 9" },
+  "portfolio.item.p9.title": { ko: "리브랜딩", en: "Rebranding", ja: "リブランディング", zh: "品牌重塑" },
+  "portfolio.item.p9.desc": { ko: "컬러/타이포 리뉴얼", en: "Color & typography refresh", ja: "カラー/タイポ刷新", zh: "配色与字体焕新" },
+
+  "portfolio.item.p10.alt": { ko: "포트폴리오 이미지 10", en: "Portfolio image 10", ja: "ポートフォリオ画像 10", zh: "作品图片 10" },
+  "portfolio.item.p10.title": { ko: "대시보드", en: "Dashboard", ja: "ダッシュボード", zh: "仪表盘" },
+  "portfolio.item.p10.desc": { ko: "지표 중심 레이아웃", en: "Metrics-driven layout", ja: "指標中心", zh: "指标驱动布局" },
+
+  "portfolio.item.p11.alt": { ko: "포트폴리오 이미지 11", en: "Portfolio image 11", ja: "ポートフォリオ画像 11", zh: "作品图片 11" },
+  "portfolio.item.p11.title": { ko: "이커머스", en: "E-commerce", ja: "EC", zh: "电商" },
+  "portfolio.item.p11.desc": { ko: "상품 카드/필터", en: "Product cards & filters", ja: "商品カード/フィルタ", zh: "商品卡片与筛选" },
+
+  "portfolio.item.p12.alt": { ko: "포트폴리오 이미지 12", en: "Portfolio image 12", ja: "ポートフォリオ画像 12", zh: "作品图片 12" },
+  "portfolio.item.p12.title": { ko: "FAQ", en: "FAQ", ja: "FAQ", zh: "常见问题" },
+  "portfolio.item.p12.desc": { ko: "반복 질문 정리", en: "Common questions answered", ja: "よくある質問", zh: "解答常见问题" },
 };
 
 

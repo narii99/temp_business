@@ -20,7 +20,6 @@ export const headerNav = [
   { key: "about", labelKey: "header.nav.about", href: "#about" },
   { key: "process", labelKey: "header.nav.process", href: "#process" },
   { key: "portfolio", labelKey: "header.nav.portfolio", href: "#portfolio" },
-  { key: "blog", labelKey: "header.nav.blog", href: "#blog" },
   { key: "services", labelKey: "header.nav.services", href: "#services" },
 ];
 

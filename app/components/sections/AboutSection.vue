@@ -5,7 +5,7 @@
         <div class="about-media" aria-hidden="true">
           <ul class="social-list" aria-label="소셜 링크">
             <li v-for="item in data.socialLinks" :key="item.key" class="social-item">
-              <a :href="item.href" :aria-label="item.ariaLabel">
+              <a :href="item.href" :aria-label="item.ariaLabel" :target="item.target" :rel="item.rel">
                 <Icon :name="item.icon" />
               </a>
             </li>

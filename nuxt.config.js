@@ -15,7 +15,17 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      htmlAttrs: { lang: "ko" },
       meta: [{ name: "color-scheme", content: "light dark" }],
+      link: [
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" },
+        {
+          rel: "stylesheet",
+          href:
+            "https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap",
+        },
+      ],
       /**
        * FOUC 최소화: 첫 페인트 전에 localStorage 테마를 data-theme으로 적용
        * (Nuxt hydration 이후에 바뀌는 깜빡임 방지)

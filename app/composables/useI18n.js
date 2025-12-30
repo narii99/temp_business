@@ -2,39 +2,51 @@ import { messages } from "~/data/messages";
 
 const STORAGE_KEY = "locale";
 
-//다국어 한/영/일/중
-//app > data > messages.js 에서 데이터 관리
 function normalizeLocale(value) {
-  return value === "ko" || value === "en" || value === "ja" || value === "zh" ? value : "ko";
+  if (value === "ko" || value === "en" || value === "ja" || value === "zh") return value;
+  return "ko";
 }
 
 export function useI18n() {
-  const locale = useState("locale", () => {
-    if (import.meta.client) return normalizeLocale(localStorage.getItem(STORAGE_KEY));
+  const supportedLocales = ["ko", "en", "ja", "zh"];
+
+  const locale = useState("i18n-locale", () => {
+    if (import.meta.client) {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      return normalizeLocale(saved);
+    }
     return "ko";
   });
 
   const setLocale = (next) => {
-    locale.value = normalizeLocale(next);
-    if (import.meta.client) localStorage.setItem(STORAGE_KEY, locale.value);
+    locale.value = next;
+    if (import.meta.client) localStorage.setItem(STORAGE_KEY, next);
   };
 
   const cycleLocale = () => {
-    const order = ["ko", "en", "ja", "zh"];
-    const idx = order.indexOf(locale.value);
-    setLocale(order[(idx + 1) % order.length] ?? "ko");
+    const idx = supportedLocales.indexOf(locale.value);
+    const next = supportedLocales[(idx + 1) % supportedLocales.length] ?? "ko";
+    setLocale(next);
   };
+
+  const applyHtmlLang = (next) => {
+    if (!import.meta.client) return;
+    document.documentElement.lang = next;
+  };
+
+  onMounted(() => {
+    applyHtmlLang(locale.value);
+  });
+
+  watch(locale, (next) => {
+    applyHtmlLang(next);
+  });
 
   const t = (key) => {
-    const entry = messages?.[key];
+    const entry = messages[key];
     if (!entry) return key;
-    return entry?.[locale.value] ?? entry?.ko ?? entry?.en ?? key;
+    return entry[locale.value] ?? key;
   };
-
-  // html lang 반영
-  useHead(() => ({
-    htmlAttrs: { lang: locale.value },
-  }));
 
   return { locale, setLocale, cycleLocale, t };
 }

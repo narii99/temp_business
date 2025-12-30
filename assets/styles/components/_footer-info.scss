@@ -1,0 +1,74 @@
+.footer-info-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-info-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-weight: 1000;
+  letter-spacing: -0.03em;
+  background: color-mix(in oklab, var(--primary) 70%, var(--palette-white) 30%);
+  color: var(--primary-contrast);
+}
+
+.footer-info-company {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.footer-info-tagline {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.footer-info-list {
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.footer-info-item {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 10px;
+  align-items: start;
+  font-size: 12px;
+}
+
+.footer-info-label {
+  color: var(--muted);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.footer-info-value {
+  color: color-mix(in oklab, var(--text) 84%, var(--muted));
+  font-weight: 800;
+}
+
+.footer-info-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed color-mix(in oklab, var(--text) 28%, transparent);
+}
+
+.footer-info-link:hover {
+  border-bottom-color: color-mix(in oklab, var(--text) 42%, transparent);
+}
+
+@media (min-width: 860px) {
+  .footer-info-item {
+    grid-template-columns: 120px 1fr;
+  }
+}
+
+

@@ -1,0 +1,33 @@
+:root {
+  --font-system-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    "Apple SD Gothic Neo", "Malgun Gothic", "Liberation Sans", sans-serif;
+
+  /* language fonts (Google Fonts via nuxt.config.js head link) */
+  --font-en: "Noto Sans", var(--font-system-sans);
+  --font-ko: "Noto Sans KR", var(--font-system-sans);
+  --font-ja: "Noto Sans JP", var(--font-system-sans);
+  /* zh: SC 우선, TC fallback */
+  --font-zh: "Noto Sans SC", "Noto Sans TC", var(--font-system-sans);
+}
+
+body {
+  font-family: var(--font-ko);
+}
+
+:root:lang(en) body {
+  font-family: var(--font-en);
+}
+
+:root:lang(ko) body {
+  font-family: var(--font-ko);
+}
+
+:root:lang(ja) body {
+  font-family: var(--font-ja);
+}
+
+:root:lang(zh) body {
+  font-family: var(--font-zh);
+}
+
+

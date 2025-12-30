@@ -24,7 +24,7 @@
         </ul>
       </div>
 
-      <div class="card card--flat" style="min-height: 320px" aria-hidden="true" />
+      <!-- <div class="card card--flat" style="min-height: 320px" aria-hidden="true" /> -->
     </div>
   </section>
 </template>
