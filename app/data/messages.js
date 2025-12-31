@@ -33,10 +33,10 @@ export const messages = {
   "hero.description": { ko: "설명, 소개하기", en: "description", ja: "説明、紹介", zh: "描述、介绍" },
   "hero.action.primary": { ko: "연락하기", en: "Contact", ja: "接触", zh: "接触" },
   "hero.action.secondary": { ko: "소개", en: "about", ja: "について", zh: "关于" },
-  "hero.stat.exp.value": { ko: "강조영역", en: "Highlight", ja: "強調", zh: "重点" },
-  "hero.stat.exp.label": { ko: "사용자경험", en: "Experience", ja: "経験", zh: "经验" },
-  "hero.stat.project.value": { ko: "강조영역", en: "Highlight", ja: "強調", zh: "重点" },
-  "hero.stat.project.label": { ko: "프로젝트", en: "Project Completed", ja: "プロジェクト", zh: "项目" },
+  "hero.stat.exp.value": { ko: "2,000,000건", en: "2,000,000", ja: "2,000,000", zh: "2,000,000" },
+  "hero.stat.exp.label": { ko: "판매", en: "sales", ja: "経験", zh: "经验" },
+  "hero.stat.project.value": { ko: "30년 노하우", en: "30years of", ja: "30年", zh: "30年" },
+  "hero.stat.project.label": { ko: "경험", en: "Completed", ja: "プロジェクト", zh: "项目" },
   "hero.stat.client.value": { ko: "강조영역", en: "Highlight", ja: "強調", zh: "重点" },
   "hero.stat.client.label": { ko: "고객만족", en: "Happy Client", ja: "顧客満足", zh: "客户满意度" },
 
@@ -112,51 +112,51 @@ export const messages = {
   "portfolio.more": { ko: "더보기", en: "Show more", ja: "もっと見る", zh: "查看更多" },
   "portfolio.less": { ko: "접기", en: "Show less", ja: "折りたたむ", zh: "收起" },
 
-  "portfolio.item.p1.alt": { ko: "포트폴리오 이미지 1", en: "Portfolio image 1", ja: "ポートフォリオ画像 1", zh: "作品图片 1" },
+  "portfolio.item.p1.alt": { ko: "랜딩 페이지", en: "Landing page", ja: "ランディングページ", zh: "落地页" },
   "portfolio.item.p1.title": { ko: "랜딩 페이지", en: "Landing page", ja: "ランディングページ", zh: "落地页" },
   "portfolio.item.p1.desc": { ko: "전환 중심의 섹션 구성", en: "Conversion-focused sections", ja: "コンバージョン重視の構成", zh: "以转化为目标的结构" },
 
-  "portfolio.item.p2.alt": { ko: "포트폴리오 이미지 2", en: "Portfolio image 2", ja: "ポートフォリオ画像 2", zh: "作品图片 2" },
+  "portfolio.item.p2.alt": { ko: "기업 소개", en: "Company profile", ja: "会社紹介", zh: "公司介绍" },
   "portfolio.item.p2.title": { ko: "기업 소개", en: "Company profile", ja: "会社紹介", zh: "公司介绍" },
   "portfolio.item.p2.desc": { ko: "브랜드 톤 앤 매너 정리", en: "Consistent brand tone", ja: "ブランドトーン統一", zh: "统一品牌调性" },
 
-  "portfolio.item.p3.alt": { ko: "포트폴리오 이미지 3", en: "Portfolio image 3", ja: "ポートフォリオ画像 3", zh: "作品图片 3" },
+  "portfolio.item.p3.alt": { ko: "서비스 소개", en: "Service overview", ja: "サービス紹介", zh: "服务介绍" },
   "portfolio.item.p3.title": { ko: "서비스 소개", en: "Service overview", ja: "サービス紹介", zh: "服务介绍" },
   "portfolio.item.p3.desc": { ko: "핵심 기능을 한눈에", en: "Key features at a glance", ja: "機能を一目で", zh: "核心功能一目了然" },
 
-  "portfolio.item.p4.alt": { ko: "포트폴리오 이미지 4", en: "Portfolio image 4", ja: "ポートフォリオ画像 4", zh: "作品图片 4" },
+  "portfolio.item.p4.alt": { ko: "상품/가격", en: "Pricing", ja: "価格", zh: "价格" },
   "portfolio.item.p4.title": { ko: "상품/가격", en: "Pricing", ja: "価格", zh: "价格" },
   "portfolio.item.p4.desc": { ko: "플랜 비교 카드", en: "Plan comparison cards", ja: "プラン比較カード", zh: "方案对比卡片" },
 
-  "portfolio.item.p5.alt": { ko: "포트폴리오 이미지 5", en: "Portfolio image 5", ja: "ポートフォリオ画像 5", zh: "作品图片 5" },
+  "portfolio.item.p5.alt": { ko: "문의/리드", en: "Lead capture", ja: "リード獲得", zh: "线索收集" },
   "portfolio.item.p5.title": { ko: "문의/리드", en: "Lead capture", ja: "リード獲得", zh: "线索收集" },
   "portfolio.item.p5.desc": { ko: "CTA 최적화", en: "Optimized CTA", ja: "CTA最適化", zh: "优化 CTA" },
 
-  "portfolio.item.p6.alt": { ko: "포트폴리오 이미지 6", en: "Portfolio image 6", ja: "ポートフォリオ画像 6", zh: "作品图片 6" },
+  "portfolio.item.p6.alt": { ko: "블로그 카드", en: "Blog cards", ja: "ブログカード", zh: "博客卡片" },
   "portfolio.item.p6.title": { ko: "블로그 카드", en: "Blog cards", ja: "ブログカード", zh: "博客卡片" },
   "portfolio.item.p6.desc": { ko: "콘텐츠 리스트 UI", en: "Content list UI", ja: "コンテンツ一覧UI", zh: "内容列表 UI" },
 
-  "portfolio.item.p7.alt": { ko: "포트폴리오 이미지 7", en: "Portfolio image 7", ja: "ポートフォリオ画像 7", zh: "作品图片 7" },
+  "portfolio.item.p7.alt": { ko: "케이스 스터디", en: "Case study", ja: "事例", zh: "案例" },
   "portfolio.item.p7.title": { ko: "케이스 스터디", en: "Case study", ja: "事例", zh: "案例" },
   "portfolio.item.p7.desc": { ko: "문제-해결-성과", en: "Problem → Solution → Result", ja: "課題→解決→成果", zh: "问题→解决→成果" },
 
-  "portfolio.item.p8.alt": { ko: "포트폴리오 이미지 8", en: "Portfolio image 8", ja: "ポートフォリオ画像 8", zh: "作品图片 8" },
+  "portfolio.item.p8.alt": { ko: "디자인 시스템", en: "Design system", ja: "デザインシステム", zh: "设计系统" },
   "portfolio.item.p8.title": { ko: "디자인 시스템", en: "Design system", ja: "デザインシステム", zh: "设计系统" },
   "portfolio.item.p8.desc": { ko: "토큰 기반 컴포넌트", en: "Token-based components", ja: "トークンベース", zh: "基于令牌的组件" },
 
-  "portfolio.item.p9.alt": { ko: "포트폴리오 이미지 9", en: "Portfolio image 9", ja: "ポートフォリオ画像 9", zh: "作品图片 9" },
+  "portfolio.item.p9.alt": { ko: "리브랜딩", en: "Rebranding", ja: "リブランディング", zh: "品牌重塑" },
   "portfolio.item.p9.title": { ko: "리브랜딩", en: "Rebranding", ja: "リブランディング", zh: "品牌重塑" },
   "portfolio.item.p9.desc": { ko: "컬러/타이포 리뉴얼", en: "Color & typography refresh", ja: "カラー/タイポ刷新", zh: "配色与字体焕新" },
 
-  "portfolio.item.p10.alt": { ko: "포트폴리오 이미지 10", en: "Portfolio image 10", ja: "ポートフォリオ画像 10", zh: "作品图片 10" },
+  "portfolio.item.p10.alt": { ko: "대시보드", en: "Dashboard", ja: "ダッシュボード", zh: "仪表盘" },
   "portfolio.item.p10.title": { ko: "대시보드", en: "Dashboard", ja: "ダッシュボード", zh: "仪表盘" },
   "portfolio.item.p10.desc": { ko: "지표 중심 레이아웃", en: "Metrics-driven layout", ja: "指標中心", zh: "指标驱动布局" },
 
-  "portfolio.item.p11.alt": { ko: "포트폴리오 이미지 11", en: "Portfolio image 11", ja: "ポートフォリオ画像 11", zh: "作品图片 11" },
+  "portfolio.item.p11.alt": { ko: "이커머스", en: "E-commerce", ja: "EC", zh: "电商" },
   "portfolio.item.p11.title": { ko: "이커머스", en: "E-commerce", ja: "EC", zh: "电商" },
   "portfolio.item.p11.desc": { ko: "상품 카드/필터", en: "Product cards & filters", ja: "商品カード/フィルタ", zh: "商品卡片与筛选" },
 
-  "portfolio.item.p12.alt": { ko: "포트폴리오 이미지 12", en: "Portfolio image 12", ja: "ポートフォリオ画像 12", zh: "作品图片 12" },
+  "portfolio.item.p12.alt": { ko: "FAQ", en: "FAQ", ja: "FAQ", zh: "常见问题" },
   "portfolio.item.p12.title": { ko: "FAQ", en: "FAQ", ja: "FAQ", zh: "常见问题" },
   "portfolio.item.p12.desc": { ko: "반복 질문 정리", en: "Common questions answered", ja: "よくある質問", zh: "解答常见问题" },
 };

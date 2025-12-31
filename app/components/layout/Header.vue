@@ -2,7 +2,7 @@
   <header class="header">
     <div class="container header-inner">
       <NuxtLink :to="brand.to" class="brand" :aria-label="t(brand.ariaLabelKey)">
-        <span class="brand-mark">{{ brand.mark }}</span>
+        <h1 class="brand-mark">{{ brand.mark }}</h1>
         <span>{{ brand.text }}</span>
       </NuxtLink>
 

@@ -1,0 +1,47 @@
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+
+  .step {
+    padding: 16px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--surface);
+
+    .step-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .step-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: color-mix(in oklab, var(--primary) 18%, var(--surface-2));
+      border: 1px solid color-mix(in oklab, var(--primary) 26%, var(--border));
+    }
+
+    .step-num {
+      font-weight: 1000;
+      letter-spacing: -0.02em;
+    }
+
+    .step-desc {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 860px) {
+  .process-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+

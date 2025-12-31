@@ -13,7 +13,7 @@ export const headerBrand = {
 
 /**
  * same-page anchor라면 href에 "#section-id" 사용
- * 다른 페이지로 가면 to: "/about" 같은 형태로 확장 가능
+ * 다른 섹션으로 가면
  */
 export const headerNav = [
   { key: "home", labelKey: "header.nav.home", href: "#home" },

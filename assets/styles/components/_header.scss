@@ -30,7 +30,7 @@
   border-radius: 12px;
   display: grid;
   place-items: center;
-  background: color-mix(in oklab, var(--primary) 75%, var(--palette-white) 25%);
+  background-color: var(--primary);
   color: var(--primary-contrast);
   font-weight: 1000;
 }

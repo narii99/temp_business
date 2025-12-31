@@ -1,0 +1,88 @@
+.hero {
+  padding: 52px 0 34px;
+  background: var(--surface-2) url("../../images/factory.jpg") center / cover no-repeat;
+  border-bottom: 1px solid var(--border);
+  height: 60vh;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+    align-items: start;
+    position: relative;
+    height: 100%;
+
+    /* hero 바닥 기준 5rem 위에 고정되는 강조 영역과 겹침 방지 */
+    padding-bottom: calc(5rem + 110px);
+  }
+
+  .hero-title {
+    font-size: clamp(32px, 4.2vw, 56px);
+    letter-spacing: -0.05em;
+    line-height: 1.03;
+  }
+
+  .hero-desc {
+    margin-top: 10px;
+    color: var(--muted);
+    max-width: 52ch;
+  }
+
+  .hero-cta {
+    margin-top: 14px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  /* HeroStatList.vue 스타일 */
+  .hero-stat-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    max-width: 520px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    bottom: 5rem;
+    width: min(520px, 100%);
+  }
+
+  .hero-stat-list-item {
+    list-style: none;
+    padding: 12px 14px;
+    background: var(--surface);
+    border-radius: var(--radius-sm);
+    text-align: center;
+  }
+
+  .hero-stat-key {
+    font-weight: 1000;
+    letter-spacing: -0.03em;
+  }
+
+  .hero-stat-label {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 800;
+  }
+}
+
+@media (min-width: 860px) {
+  .hero .hero-inner {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+  }
+}
+
+

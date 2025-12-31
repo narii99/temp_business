@@ -1,6 +1,7 @@
 @use "../tokens" as t;
 
-// semantic colors -> CSS variables
+// 테마 컬러 설정
+// 라이트모드 컬러 설정
 @mixin theme-light {
   --bg: #{t.$neutral-50};
   --surface: #{t.$white};
@@ -8,7 +9,6 @@
   --text: #{t.$neutral-900};
   --muted: #{t.$blue-gray-700};
   --border: #{t.$neutral-200};
-
   --primary: #{t.$brand-600};
   --primary-contrast: #{t.$white};
   --accent: #{t.$accent-500};
@@ -16,6 +16,7 @@
   --shadow: 0 18px 50px rgba(#{t.$black}, 0.12);
 }
 
+//다크모드 컬러 설정
 @mixin theme-dark {
   --bg: #{t.$blue-gray-900};
   --surface: color-mix(in oklab, #{t.$white} 6%, transparent);
@@ -32,15 +33,14 @@
 }
 
 :root {
-  /* layout tokens */
+  //레이아웃 토큰 설정
   --container: 1120px;
   --radius: 16px;
   --radius-sm: 12px;
   --header-h: 64px;
 
-  /* palette tokens (no raw color keywords in component css) */
-  --palette-white: #{t.$white};
-  --palette-black: #{t.$black};
+  --white: #{t.$white};
+  --black: #{t.$black};
 }
 
 :root {
